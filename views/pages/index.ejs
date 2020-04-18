@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>BMI Calculator</title>
+</head>
+
+<body class="text-center">
+
+    <form action="/" method="POST" class="form-signin">
+      
+      <h1 class="h3 mb-3 font-weight-normal">BMI (Body Mass Index Calculator)</h1>
+      
+      <input type="number" name="inputHeight" class="form-control p-4 m-4" placeholder="Height (CM)" required autofocus>
+
+      <input type="number" name="inputWeight" class="form-control p-4 m-4" placeholder="Weight (KG)" required autofocus>
+      
+      <button class="btn btn-lg btn-primary btn-block p-4 m-4" type="submit">Calculate</button>
+      
+      <h2><%= BMIText %></h2>
+
+      <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
+      
+    </form>
+
+  </body>
+
+</html>
